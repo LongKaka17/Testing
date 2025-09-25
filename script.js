@@ -1,11 +1,11 @@
-// Scroll đến section
+// スクロール機能
 function scrollToSection(id) {
   document.getElementById(id).scrollIntoView({ behavior: "smooth" });
 }
 
-// Xử lý form liên hệ
+// フォーム送信処理
 document.getElementById("contactForm").addEventListener("submit", function(e) {
   e.preventDefault();
-  document.getElementById("formMessage").innerText = "Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm.";
+  document.getElementById("formMessage").innerText = "お問い合わせありがとうございます！できるだけ早くご連絡いたします。";
   this.reset();
 });
